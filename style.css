@@ -1,0 +1,62 @@
+body {
+        background-color: black; /* Keeps the whole page black */
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Removes any scrollbars */
+        
+     
+      }
+	  #btn-div{
+		
+        height: 100vh;
+		 display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+	  }
+
+
+      #click-btn {
+        padding: 15px 35px;
+        font-size: 1.5rem;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 2;
+        transition: background-color 0.3s;
+      }
+
+      #click-btn:hover {
+        background-color: #e91e63;
+      }
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+  margin: 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  
+  /* Replace 'top' with 'bottom' so it always stays on screen */
+  bottom: 20px; 
+  width: 100%; /* Spans the whole width */
+  text-align: center; /* Centers the text nicely */
+  
+  text-shadow: 0 0 2px white;
+  z-index: 10; /* Ensures the fireworks don't cover it */
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 15px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
